@@ -49,8 +49,19 @@ passive_DS/ :
 
 
 
+-------------
+
+# Experimental Setup
+
+<p align="center">
+<img src="https://github.com/epfl-lasa/sliding-ds-control/blob/main/images/qolo_experiments.png"  width="750"></>
 
 
+<p align="center">
+<img src="https://github.com/epfl-lasa/sliding-ds-control/blob/main/images/qolo_schematic.png"  width="350"></>
+
+
+-------------
 ## Related packages:
 
 [P1] Main ROS controller for Qolo-robot
@@ -70,19 +81,19 @@ https://github.com/epfl-lasa/dynamic_obstacle_avoidance/
 > [1] Paez-Granados D., Gupta V. and Billard, A. “Unfreezing Social Navigation: Dynamical Systems based Compliance for Contact Control in Robot Navigation”. 2022. (Under review)
 
 
-# Qolo Design:
+### Qolo Design:
 
 > [2] Paez-Granados, D. F., Kadone, H., & Suzuki, K. (2018). Unpowered Lower-Body Exoskeleton with Torso Lifting Mechanism for Supporting Sit-to-Stand Transitions. IEEE International Conference on Intelligent Robots and Systems, 2755–2761. https://doi.org/10.1109/IROS.2018.8594199
 
-# Qolo Hands-free control:
+### Qolo Hands-free control:
 
 > [3] Chen, Y., Paez-Granados, D., Kadone, H., & Suzuki, K. (2020). Control Interface for Hands-free Navigation of Standing Mobility Vehicles based on Upper-Body Natural Movements. IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS-2020). https://doi.org/10.1109/IROS45743.2020.9340875
 
-# Qolo shared control:
+### Qolo shared control:
 
 > [4] Gonon, D. Paez-Granados, D., Billard, A. (2021). Reactive Controller for a Convex Non-holonomic Robot to Travel in Crowds. IEEE Robotics and Automation Letters (IEEE-RAL).
 
-# Obstacle avoidance through modulated-DS:
+### Obstacle avoidance through modulated-DS:
 
 > [5] Huber, Lukas, Aude Billard, and Jean-Jacques E. Slotine. (2019) "Avoidance of Convex and Concave Obstacles with Convergence ensured through Contraction." IEEE Robotics and Automation Letters (IEEE-RAL).
 
@@ -93,8 +104,7 @@ https://diegofpaez.wordpress.com/
 
 **Acknowledgments**
 This project was partially founded by:
+
 > The EU Horizon 2020 Project CROWDBOT (Grant No. 779942): http://crowdbot.eu
 
 > The Toyota Mobility Foundation (TMF) through the Grant: Mobility Unlimited Challenge 2019: https://mobilityunlimited.org
-
-> Grant-in-Aid for Scientific Research from the Ministry of Education, Culture, Sports, Science and Technology of (MEXT) Japan: http://www.ai.iit.tsukuba.ac.jp/research/046.html
