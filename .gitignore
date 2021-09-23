@@ -129,6 +129,6 @@ dmypy.json
 .pyre/
 
 # Video / Images
-.mp4
-.eps
-.pdf
+*.mp4
+*.eps
+*.pdf
