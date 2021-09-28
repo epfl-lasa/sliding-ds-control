@@ -3,12 +3,13 @@
 Repository with controller in Python and Matlab for Passsive Dynamical Systems control focused on mobile robots compliance repsonse to impact and Sliding response for advancing around pedestrians/obstacles. 
 
 <p align="center">
-<img src="https://github.com/epfl-lasa/sliding-ds-control/blob/main/images/qolo_mds_passiveDS_damped_dynamic.gif"  width="650"></>
+<img src="https://github.com/epfl-lasa/sliding-ds-control/blob/main/images/qolo_mds_passiveDS_damped_dynamic.gif"  width="500"></>
+<img src="https://github.com/epfl-lasa/sliding-ds-control/blob/main/images/passive_DS_child_qolo.gif"  width="500"></>
 
 Showing an integrated controller in 2D navigation with Dynamical Systems based [obstacle avoidance](https://github.com/epfl-lasa/dynamic_obstacle_avoidance_linear).
   
 <p align="center">
-<img src="https://github.com/epfl-lasa/sliding-ds-control/blob/main/images/controller-qolo-compliant.png"  width="750"></>
+<img src="https://github.com/epfl-lasa/sliding-ds-control/blob/main/images/controller-qolo-compliant.png"  width="900"></>
 
 Work published in:
 
@@ -58,7 +59,7 @@ src/ : python [controller](https://github.com/epfl-lasa/sliding-ds-control/tree/
 
   Execution with an adversarial obstacle not perceived by the underlying obstacle avoidance modulated DS: 
 <p align="center">
-<img src="https://github.com/epfl-lasa/sliding-ds-control/blob/main/images/qolo_mds_passiveDS_damped_static.gif"  width="750"></>
+<img src="https://github.com/epfl-lasa/sliding-ds-control/blob/main/images/qolo_mds_passiveDS_damped_static.gif"  width="600"></>
 
 -------------
 
@@ -78,6 +79,18 @@ src/ : python [controller](https://github.com/epfl-lasa/sliding-ds-control/tree/
 <img src="https://github.com/epfl-lasa/sliding-ds-control/blob/main/images/traj_shared.png"  width="560"></>
 <img src="https://github.com/epfl-lasa/sliding-ds-control/blob/main/images/shared_control.png"  width="380"></>
 
+-------------
+
+# Applications with other Robots:
+
+We show here two examples of application in other mobile robots through a pybullet simulator with walking pedestrians [P4] [check full repository here](https://github.com/epfl-lasa/human-robot-collider):
+
+1. An omnidirectional (holonomic) robot:
+<p align="center">
+<img src="https://github.com/epfl-lasa/sliding-ds-control/blob/main/images/passive_DS_adult_pepper.gif"  width="900"></>
+  
+2. A non-holonomic robot - smart wheelchair:
+<img src="https://github.com/epfl-lasa/sliding-ds-control/blob/main/images/passive_DS_adult_wheelchair.gif"  width="900"></>
 
 -------------
 ## Related packages:
@@ -85,40 +98,38 @@ src/ : python [controller](https://github.com/epfl-lasa/sliding-ds-control/tree/
 [P1] Main ROS controller for Qolo-robot
 https://github.com/DrDiegoPaez/qolo_ros
 
-[P2] Obstacle avoidance for tight shape and non-holonomic constraints (used in shared control) [4] 
-
+[P2] Obstacle avoidance for tight shape and non-holonomic constraints (used in shared control) [4]
 https://github.com/epfl-lasa/rds
 
 [P3] Obstacle avoidance based on dynamical systems [5]:
 https://github.com/epfl-lasa/qolo_modulation
-https://github.com/epfl-lasa/dynamic_obstacle_avoidance/
+https://github.com/epfl-lasa/dynamic_obstacle_avoidance
 
+[P4] Pybullet pedestrian collision simulator:
+https://github.com/epfl-lasa/human-robot-collider
 
 ## References:
 
 > [1] Paez-Granados D., Gupta V. and Billard, A. “Unfreezing Social Navigation: Dynamical Systems based Compliance for Contact Control in Robot Navigation”. 2022. (Under review)
 
-
-### Qolo Design:
-
+#### Qolo Design:
 > [2] Paez-Granados, D. F., Kadone, H., & Suzuki, K. (2018). Unpowered Lower-Body Exoskeleton with Torso Lifting Mechanism for Supporting Sit-to-Stand Transitions. IEEE International Conference on Intelligent Robots and Systems, 2755–2761. https://doi.org/10.1109/IROS.2018.8594199
 
-### Qolo Hands-free control:
+#### Qolo Hands-free control:
 
 > [3] Chen, Y., Paez-Granados, D., Kadone, H., & Suzuki, K. (2020). Control Interface for Hands-free Navigation of Standing Mobility Vehicles based on Upper-Body Natural Movements. IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS-2020). https://doi.org/10.1109/IROS45743.2020.9340875
 
-### Qolo shared control:
+#### Qolo shared control:
 
 > [4] Gonon, D. Paez-Granados, D., Billard, A. (2021). Reactive Controller for a Convex Non-holonomic Robot to Travel in Crowds. IEEE Robotics and Automation Letters (IEEE-RAL).
 
-### Obstacle avoidance through modulated-DS:
+#### Obstacle avoidance through modulated-DS:
 
 > [5] Huber, Lukas, Aude Billard, and Jean-Jacques E. Slotine. (2019) "Avoidance of Convex and Concave Obstacles with Convergence ensured through Contraction." IEEE Robotics and Automation Letters (IEEE-RAL).
 
 
 **Contact**: 
-[Dr. Diego Paez]
-https://diegofpaez.wordpress.com/
+[Dr. Diego Paez](https://diegofpaez.wordpress.com/)
 
 **Acknowledgments**
 This project was partially founded by:
