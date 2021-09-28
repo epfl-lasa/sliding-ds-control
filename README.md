@@ -1,10 +1,12 @@
 # sliding-ds-control
 
-Repository with controller in Python and Matlab for Passsive Dynamical Systems control for mobile robots applications in 2D navigation with compliance repsonse to impact and Sliding response for advancing around pedestrians/obstacles.
+Repository with controller in Python and Matlab for Passsive Dynamical Systems control focused on mobile robots compliance repsonse to impact and Sliding response for advancing around pedestrians/obstacles. 
 
 <p align="center">
-<img src="https://github.com/epfl-lasa/sliding-ds-control/blob/main/images/Complaint_DS.png"  width="750"></>
+<img src="https://github.com/epfl-lasa/sliding-ds-control/blob/main/images/qolo_mds_passiveDS_damped_dynamic.gif"  width="650"></>
 
+Showing an integrated controller in 2D navigation with Dynamical Systems based [obstacle avoidance](https://github.com/epfl-lasa/dynamic_obstacle_avoidance_linear).
+  
 <p align="center">
 <img src="https://github.com/epfl-lasa/sliding-ds-control/blob/main/images/controller-qolo-compliant.png"  width="750"></>
 
@@ -16,7 +18,9 @@ Work published in:
 Requirements:
 ```
 Scripts for 2D simulation require matlab2020+
-Alternatively 3D simulaiton is available through pybullet
+Alternatively 3D simulaiton is available through pybullet.
+
+Requirements for python execution: conda, jupyter notebook, python3.
 
 Setup:
 git clone https://github.com/epfl-lasa/sliding-ds-control.git
@@ -33,32 +37,46 @@ data/ :
 
 ### Scripts
 
-scripts/ : 
-
+scripts/ : matlab: Containts simulations for passive compliance assuming a constant spring for adversarial pedestrians --> [Main_file](https://github.com/epfl-lasa/sliding-ds-control/blob/main/scripts/matlab_scripts/simulation.m)
+           pybullet_simulator: submodule to a [pybullet_collision](https://github.com/epfl-lasa/human-robot-collider) simulator with a walking pedestrian that implements the sliding_DS in multiple robots.
 
 ### Visualization
 
-figures/ : 
-
-images/ : 
+images/ : Includes some pictures of the method, simulation and experiments.
 
 
 ### Controller
 
-passive_DS/ : 
-
-
+src/ : python [controller](https://github.com/epfl-lasa/sliding-ds-control/tree/main/src/compliance_controller) used in experiments and simulator 
 
 -------------
 
-# Experimental Setup
+### Passive Compliance Method
+
+<p align="center">
+<img src="https://github.com/epfl-lasa/sliding-ds-control/blob/main/images/Complaint_DS.png"  width="600"></>
+
+  Execution with an adversarial obstacle not perceived by the underlying obstacle avoidance modulated DS: 
+<p align="center">
+<img src="https://github.com/epfl-lasa/sliding-ds-control/blob/main/images/qolo_mds_passiveDS_damped_static.gif"  width="750"></>
+
+-------------
+
+# Experimental Setup and Evaluation:
 
 <p align="center">
 <img src="https://github.com/epfl-lasa/sliding-ds-control/blob/main/images/qolo_experiments.png"  width="750"></>
 
+  Using the robot Qolo [2] in shared control mode [4] and autonomous driving with modulated DS [5] we evaluated the sliding DS response with a frontal bumper:
 
 <p align="center">
 <img src="https://github.com/epfl-lasa/sliding-ds-control/blob/main/images/qolo_schematic.png"  width="350"></>
+
+  The results with an adversarial pedestrian shows a positive sliding response around the obstacle:
+
+<p align="center">
+<img src="https://github.com/epfl-lasa/sliding-ds-control/blob/main/images/traj_shared.png"  width="560"></>
+<img src="https://github.com/epfl-lasa/sliding-ds-control/blob/main/images/shared_control.png"  width="380"></>
 
 
 -------------
