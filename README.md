@@ -1,4 +1,4 @@
-# sliding-ds-control
+# Compliant DS for Mobile Robots (sliding-ds):
 
 Repository with controller in Python and Matlab for Passsive Dynamical Systems control focused on mobile robots compliance repsonse to impact and Sliding response for advancing around pedestrians/obstacles. 
 
