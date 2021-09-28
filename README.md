@@ -4,7 +4,7 @@ Repository with controller in Python and Matlab for Passsive Dynamical Systems c
 
 <p align="center">
 <img src="https://github.com/epfl-lasa/sliding-ds-control/blob/main/images/qolo_mds_passiveDS_damped_dynamic.gif"  width="500"></>
-<img src="https://github.com/epfl-lasa/sliding-ds-control/blob/main/images/passive_DS_adult_qolo.gif"  width="500"></>
+<img src="https://github.com/epfl-lasa/sliding-ds-control/blob/main/images/passive_DS_adult_qolo.gif"  width="455"></>
 
 Showing an integrated controller in 2D navigation with Dynamical Systems based [obstacle avoidance](https://github.com/epfl-lasa/dynamic_obstacle_avoidance_linear).
   
