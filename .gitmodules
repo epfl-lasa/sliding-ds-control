@@ -1,3 +1,6 @@
 [submodule "scripts/python_controller/human-robot-collider"]
 	path = scripts/python_controller/human-robot-collider
 	url = https://github.com/epfl-lasa/human-robot-collider.git
+[submodule "scripts/pybullet_simulator/human-robot-collider"]
+	path = scripts/pybullet_simulator/human-robot-collider
+	url = https://github.com/epfl-lasa/human-robot-collider.git
