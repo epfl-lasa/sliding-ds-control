@@ -3,8 +3,8 @@
 Repository with controller in Python and Matlab for Passsive Dynamical Systems control focused on mobile robots compliance repsonse to impact and Sliding response for advancing around pedestrians/obstacles. 
 
 <p align="center">
-<img src="https://github.com/epfl-lasa/sliding-ds-control/blob/main/images/qolo_mds_passiveDS_damped_dynamic.gif"  width="450"></>
-<img src="https://github.com/epfl-lasa/sliding-ds-control/blob/main/images/passive_DS_adult_qolo.gif"  width="410"></>
+<img src="https://github.com/epfl-lasa/sliding-ds-control/blob/main/images/qolo_mds_passiveDS_damped_dynamic.gif"  width="390"></>
+<img src="https://github.com/epfl-lasa/sliding-ds-control/blob/main/images/passive_DS_adult_qolo.gif"  width="355"></>
 
 Showing an integrated controller in 2D navigation with Dynamical Systems based [obstacle avoidance](https://github.com/epfl-lasa/dynamic_obstacle_avoidance_linear).
   
@@ -94,10 +94,10 @@ We show here two examples of application in other mobile robots through a pybull
 
 1. An omnidirectional (holonomic) robot:
 <p align="center">
-<img src="https://github.com/epfl-lasa/sliding-ds-control/blob/main/images/passive_DS_adult_pepper.gif"  width="900"></>
+<img src="https://github.com/epfl-lasa/sliding-ds-control/blob/main/images/passive_DS_adult_pepper.gif"  width="800"></>
   
 2. A non-holonomic robot - smart wheelchair:
-<img src="https://github.com/epfl-lasa/sliding-ds-control/blob/main/images/passive_DS_adult_wheelchair.gif"  width="900"></>
+<img src="https://github.com/epfl-lasa/sliding-ds-control/blob/main/images/passive_DS_adult_wheelchair.gif"  width="800"></>
 
 -------------
 ## Related packages:
