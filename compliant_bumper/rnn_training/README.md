@@ -2,6 +2,12 @@
 
 Folder with training for RNN model of the compliant bumper and its comparison with the SVR model.
 
+
+<p align="center">
+<img src="comparison.png" width="450"><br>
+<tt>Fig: Comparison between RNN model and SVR model</tt>
+</p>
+
 -------------
 
 ## Jupyter Notebooks
