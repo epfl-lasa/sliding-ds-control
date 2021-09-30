@@ -1,6 +1,9 @@
 # -*- coding: utf-8 -*-
 
+from typing import List
+
 import numpy as np
+
 
 class SVR:
     def __init__(self, filename: str):
@@ -20,7 +23,7 @@ class SVR:
             y[i] = self.predict(x[i:i+1,:])
         return y
 
-    def predict(self, x: list[float]):
+    def predict(self, x: List[float]):
         if x.shape[0] > 1:
             raise ValueError(
                 "Input shape of {:d} is not supported by SVR.predict()".format(x.shape[0]) +
