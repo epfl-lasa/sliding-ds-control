@@ -1,10 +1,11 @@
+# -*- coding: utf-8 -*-
 #!/usr/bin/env python3
 
 import numpy as np
 import tflite_runtime.interpreter as tflite
 
 class NN:
-    def __init__(self, filename):
+    def __init__(self, filename: str):
         self.interpreter = tflite.Interpreter(model_path=filename)
         self.interpreter.allocate_tensors()
 
@@ -14,7 +15,7 @@ class NN:
         # Prev Values
         self.prev = np.zeros((5,6))
 
-    def predict(self, x):
+    def predict(self, x: list[float]):
         data = np.float32(np.vstack((self.prev, x)))
 
         self.interpreter.set_tensor(self.input_details[0]['index'], data.reshape((1, -1)))

@@ -3,7 +3,7 @@
 import numpy as np
 
 class SVR:
-    def __init__(self, filename):
+    def __init__(self, filename: str):
         model = np.load(filename)
         self.mu = np.array(model['mu'])
         self.sigma = np.array(model['sigma'])
@@ -20,7 +20,7 @@ class SVR:
             y[i] = self.predict(x[i:i+1,:])
         return y
 
-    def predict(self, x):
+    def predict(self, x: list[float]):
         if x.shape[0] > 1:
             raise ValueError(
                 "Input shape of {:d} is not supported by SVR.predict()".format(x.shape[0]) +
@@ -39,8 +39,6 @@ class SVR:
 
         x_normalised = (x - self.mu) / self.sigma
         _temp = (self.sv - x_normalised) / self.kernel_scale
-        # K = np.exp(- np.linalg.norm(_temp, ord=2, axis=1)**2)
         K = np.exp(- np.sum(_temp**2, axis=1))
-
         y = np.sum(self.alpha * K) + self.bias
         return [y]

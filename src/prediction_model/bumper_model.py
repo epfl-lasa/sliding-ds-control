@@ -1,27 +1,30 @@
 # -*- coding: utf-8 -*-
 
-import numpy as np
 import os
 
 from . import SVR
 from . import NN
 
 class BumperModel:
-    def __init__(self, folder=None):
+    """BumperModel class"""
+
+    def __init__(self, folder: str = None, type: str = "NN") -> None:
         if folder is None:
             folder = os.path.dirname(__file__)
 
-        # self.models = [
-        #     SVR(os.path.join(folder, 'trainedModels_Fx.npz')),
-        #     SVR(os.path.join(folder, 'trainedModels_Fy.npz')),
-        #     SVR(os.path.join(folder, 'trainedModels_Tz.npz'))
-        # ]
-
-        self.models = [
-            NN(os.path.join(folder, 'trainedModels_nn.tflite'))
-        ]
+        if type.upper() == "SVR":
+            self.models = [
+                SVR(os.path.join(folder, 'trainedModels_Fx.npz')),
+                SVR(os.path.join(folder, 'trainedModels_Fy.npz')),
+                SVR(os.path.join(folder, 'trainedModels_Tz.npz'))
+            ]
+        else:
+            # Default to RNN model
+            self.models = [
+                NN(os.path.join(folder, 'trainedModels_nn.tflite'))
+            ]
     
-    def predict(self, x):
+    def predict(self, x: list[float]) -> list[float]:
         return [
             out
             for model in self.models
