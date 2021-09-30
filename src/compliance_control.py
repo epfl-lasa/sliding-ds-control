@@ -119,8 +119,8 @@ def damper_correction(ft_data):
     Fmag = Fx*np.sin(theta) + Fy*np.cos(theta)
     
     rospy.loginfo(
-        "\n\tFx = {}\n\tFy = {}\n\tTz = {}\n\ttheta = {}\n\tFmag = {}\n-------------------------\n".format(
-            Fx, Fy, Tz, theta, Fmag
+        "\n\tFx = {}\n\tFy = {}\n\tMz = {}\n\ttheta = {}\n\tFmag = {}\n-------------------------\n".format(
+            Fx, Fy, Mz, theta, Fmag
         )
     )
 
