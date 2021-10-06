@@ -22,6 +22,7 @@ All the notebooks can be run using Google Colaboratory. Set the `Hardware accele
 
 
 ### Direct links to the Google Colaboratory
-- **search_RNN_hyperparam.ipynb:** https://colab.research.google.com/github/epfl-lasa/sliding-ds-control/blob/main/compliant_bumper/rnn_training/search_RNN_hyperparam.ipynb
-- **train_RNN.ipynb:** https://colab.research.google.com/github/epfl-lasa/sliding-ds-control/blob/main/compliant_bumper/rnn_training/train_RNN.ipynb
-- **comparison.ipynb:** https://colab.research.google.com/github/epfl-lasa/sliding-ds-control/blob/main/compliant_bumper/rnn_training/comparison.ipynb
+- **search_RNN_hyperparam.ipynb:** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/epfl-lasa/sliding-ds-control/blob/main/compliant_bumper/rnn_training/search_RNN_hyperparam.ipynb)
+- **train_RNN.ipynb:** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/epfl-lasa/sliding-ds-control/blob/main/compliant_bumper/rnn_training/train_RNN.ipynb)
+- **comparison.ipynb:** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/epfl-lasa/sliding-ds-control/blob/main/compliant_bumper/rnn_training/comparison.ipynb)
+
