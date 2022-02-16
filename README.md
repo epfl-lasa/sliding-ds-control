@@ -21,13 +21,14 @@ Work published in:
 Requirements:
 ```
 Scripts for 2D simulation require matlab2020+
-Alternatively 3D simulaiton is available through pybullet.
+Alternatively 3D simulation is available through pybullet.
 
 Requirements for python execution: conda, jupyter notebook, python3.
 
 Setup:
   git clone https://github.com/epfl-lasa/sliding-ds-control.git
-# To use pybullet submodule:
+  
+  # To use pybullet submodule:
   git submodule update --init
 
 ```
