@@ -6,20 +6,25 @@ Python code for sliding-ds implementation on QOLO using ROS.
 
 ## Code Structure
 
-- `main.py` : Demo file for running control ROS node using compliance controller
+- `main.py`
+: Demo file for running control ROS node using compliance controller
 
-- `bumper_prediction.py` : Demo file for running bumper prediction ROS node
+- `bumper_prediction.py`
+: Demo file for running bumper prediction ROS node
 
-- `plot_force_bumper.py` : Demo file for plotting real-time bumper contact
+- `plot_force_bumper.py` 
+: Demo file for plotting real-time bumper contact
 
-- `compliance_controller` : Python module implementing various controllers
-<br> $\rightarrow$ `admittance.py` : Admittance controller
-<br> $\rightarrow$ `passive_ds.py` : Sliding passive ds controller
+- `compliance_controller`
+: Python module implementing various controllers
+    <br> $\rightarrow$ `admittance.py` : Admittance controller
+    <br> $\rightarrow$ `passive_ds.py` : Sliding passive ds controller
 
-- `prediction_model` : Prediction models for contact force on the bumper surface
-<br> $\rightarrow$ `bumper_model.py` : Main bumper model class
-<br> $\rightarrow$ `svr.py` : SVR
-<br> $\rightarrow$ `nn.py` : RNN
+- `prediction_model`
+: Prediction models for contact force on the bumper surface
+    <br> $\rightarrow$ `bumper_model.py` : Main bumper model class
+    <br> $\rightarrow$ `svr.py` : SVR
+    <br> $\rightarrow$ `nn.py` : RNN
 
 -------------
 
