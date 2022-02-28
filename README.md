@@ -13,9 +13,26 @@ Showing an integrated controller in 2D navigation with Dynamical Systems based [
   <img src="images/controller-qolo-compliant.png" width="900">
 </p>
 
-Work published in:
+**Cite as:**
 
-[1] Paez-Granados D., Gupta V. and Billard, A. “Unfreezing Social Navigation: Dynamical Systems based Compliance for Contact Control in Robot Navigation”. 2022. (Under review)
+[1] Paez-Granados D., Gupta V. and Billard, A. “Unfreezing Social Navigation: Dynamical Systems based Compliance for Contact Control in Robot Navigation”. IEEE International Conference on Robotics and Automation, ICRA-2022.
+```
+@inproceedings{Paez_ICRA22,
+   author = {Diego Paez-Granados and Vaibhav Gupta and Aude Billard},
+   city = {Philadelphia (PA), USA},
+   issue = {1},
+   journal = {IEEE International Conference on Robotics and Automation (ICRA)},
+   keywords = {Complaint control,crowd navigation,obstacle avoidance},
+   month = {5},
+   pages = {1-7},
+   publisher = {IEEE},
+   title = {Unfreezing Social Navigation : Dynamical Systems based Compliance for Contact Control in Robot Navigation},
+   volume = {1},
+   url = {https://youtu.be/y7D-YeJ0mmg%0Ahttp://infoscience.epfl.ch/record/287442?&ln=en},
+   year = {2022},
+}
+
+```
 
 -------------
 Requirements:
