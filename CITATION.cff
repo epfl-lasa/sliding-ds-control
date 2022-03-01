@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Paez-Granados"
+  given-names: "Diego"
+  orcid: "https://orcid.org/0000-0002-6143-1432"
+- family-names: "Gupta"
+  given-names: "Vaibhav"
+  orcid: "https://orcid.org/0000-0003-4159-6261"
+- family-names: "Billard"
+  given-names: "Aude"
+title: "Compliant DS for Mobile Robots: sliding-ds-control"
+version: 1.0.0
+# doi: 10.5281/zenodo.1234
+date-released: 2022-03-01
+url: "https://github.com/epfl-lasa/sliding-ds-control"
